@@ -1,0 +1,8 @@
+Difference between promise and async await in Javascript:
+1. If a function “funct1” is to executed after the promise,
+promise.then(funct1) continues execution of the current function after adding the funct1 call to the callback chain.
+If the function “funct1” is to be executed after await,
+then await X() suspends execution of the current function and then funct1 is executed.
+2. Error-handling in promises are done using then-catch whereas in async await, that is done using try-catch.
+3. To read and understand the structure of async await is easier than that in promise.
+4. A promise cane have 3 states: resolved, pending or rejected. Async await can have either of two states: resolved or rejected.

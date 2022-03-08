@@ -1,0 +1,3 @@
+Difference between Include and Extend in ruby
+If we include, for example a module in a class, then we can only call the functionality of module through the objects of that class of ours.
+But if we extend, similarly a module in a class then that module's functionality can be directly called by the class name of our class. It means an object is not needed to access the module's functionality. It becomes static functionality of that class. 

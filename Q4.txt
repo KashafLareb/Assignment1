@@ -1,0 +1,4 @@
+Difference between Class and Module in ruby:
+1. A class can be instantiated while an module cannot.
+2. A module doesn't contain any variables like a class.
+3. A module just consist of function or functions that can be included in one or more classes and then be used or called through the objects of those classes. 
