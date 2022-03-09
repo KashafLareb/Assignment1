@@ -14,26 +14,28 @@ end
 
 def CodelandUsernameValidation(str)
 
-alphabet = /\A[a-zA-Z]/  # Ensuring point 2
-nonWordCharacter = /\W/  # Ensuring point 3
+    alphabet = /\A[a-zA-Z]/  # Ensuring point 2
+    nonWordCharacter = /\W/  # Ensuring point 3
 
-if checkSize(str)
-    if str.start_with?(alphabet) && !(str.match?(nonWordCharacter)) && !(str.end_with?("_"))  # Ensuring point 4
-        return true
+    if checkSize(str)
+        if str.start_with?(alphabet) && !(str.match?(nonWordCharacter)) && !(str.end_with?("_"))  # Ensuring point 4
+            return true
+        else
+            return false
+        end
     else
         return false
-    end
-else
-    return false
-end  
+    end  
 
 end
 
 
 def testingUsernameValidationFunction
+
     puts "Enter the user name: "
     inputString = gets
     puts CodelandUsernameValidation(inputString.chomp)
+    
 end
 
 testingUsernameValidationFunction
